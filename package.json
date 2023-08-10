@@ -43,6 +43,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://ericsimonlarios.github.io",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   }
