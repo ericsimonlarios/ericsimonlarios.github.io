@@ -2,6 +2,7 @@
   "name": "ericsimonlarios.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ericsimonlarios.github.io/ericsimonlarios.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
@@ -46,7 +47,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://ericsimonlarios.github.io/ericsimonlarios.github.io",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   }
