@@ -1,11 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: 'Hammersmith_One';
   src: url("fonts/Hammersmith_One/HammersmithOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open_sans";
+  src: url("fonts/Open_Sans/static/OpenSans-Regular.ttf");
+}
+
+@font-face {
   font-family: "Patua_One";
   src: url("fonts/Patua_One/PatuaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bricolage_Grotesque";
+  src: url("fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf");
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.open_sans{
+  font-family: 'Open_sans', sans-serif;
+}
+
+.bricolage_grotesque{
+  font-family: 'Bricolage_Grotesque', sans-serif;
 }
 
 body {
@@ -17,15 +43,250 @@ body {
   background-image: url("assets/portfolio-bg.gif");
 }
 
+.techStack li{
+  background: #0A205A;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: .25vw;
+  font-weight: bold;
+  cursor:default;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.techStack li:hover{
+ background:#FBBF24;
+ color:black;
+}
+
+.dark li{
+  background: black;
+  color: white;
+}
+
+.dark li:hover{
+  background: #FBBF24;
+  color:black;
+}
+
+.view-proj-btn{
+  border-color: #294791;
+  background:#0A205A;
+  color:white;
+}
+
+.view-proj-btn:hover{
+  border-color:#cf9910;
+  background:#FBBF24;
+  color: black;
+}
+
+.darker-yellow{
+  border-color:#294791;
+}
+
+.dark-blue-color{
+  color:#0A205A
+}
+
+.hoverAnchor:hover{
+  color: white
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.techUsed{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ft1-img-banner{
+  width: 350px;
+  height: 350px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.techUsed li{
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: .25vw;
+  cursor:default;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* .about {
+  text-align: center;
+  background-image: url("assets/aboutme-bg2.png");
+  clip-path: polygon(100% 0, 100% 0, 100% 85%, 0 0);
+} */
+
+.box::before,
+.box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0C1E4D;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, -20% 0);
+}
+
+.box {
+  display:flex;
+  position:relative;
+}
+
+.contact-box::before,
+.contact-box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0C1E4D;
+  clip-path: polygon(-20% 0, 100% 0, 100% 60%, 0 30%);
+}
+
+.contact-box {
+  display:flex;
+  position:relative;
+}
+
+.top-left-box::before,
+.top-left-box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0C1E4D;
+  clip-path: polygon(-20% 0, 100% 0, 100% 10%, 0 20%);
+}
+
+.top-left-box {
+  display:flex;
+  position:relative;
+}
+
+.top-right-box::before,
+.top-right-box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0C1E4D;
+  clip-path: polygon( -20% 0, 100% 0, 100% 20%, 0 10%);
+}
+
+.top-right-box {
+  display:flex;
+  position:relative;
+}
+
+.top-box::before,
+.top-box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0C1E4D;
+  clip-path: polygon( -20% 0, 100% 0, 100% 10%, 0 10%);
+}
+
+.top-box {
+  display:flex;
+  position:relative;
+}
+
+.project {
+  background-image: url("assets/projects-bg.png");
+}
+
+.contact {
+  background-color: #0A205A;
+}
+
+.yellow-color{
+  color:#FBBF24;
+}
+
+.yellow-border{
+  border-color:#FBBF24;
+}
+
+.white-stroke{
+ 
+  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow:
+-1px 0px 0px black,
+1px 0px 0px black,
+0px -1px 0px black,
+0px 1px 0px black; */
+}
+
 .main-container{
   background-image: url("assets/portfolio-bg.gif");
   height: 100vh;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.navItem{
+  cursor: pointer;
+}
+
+.navItem:hover{
+  color:#FBBF24;
+}
+
+.img-container-1{
+  width: 350px;
+  height: 350px;
+}
+
+.img-container-2{
+  width: 300px;
+  height: 400px;
+}
+
+.img-banner{
+  width: 200px;
+  height: 200px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
