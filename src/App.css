@@ -24,6 +24,8 @@
 
 html{
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
 }
 
 .open_sans{
@@ -35,21 +37,21 @@ html{
 }
 
 body {
-  font-family: 'Patua_One', sans-serif;
+  font-family: 'Open_sans', sans-serif;
 }
 
-.App {
-  text-align: center;
-  background-image: url("assets/portfolio-bg.gif");
+.home-bg{
+  background-image: url("assets/portfolio-bg-2.png");
 }
 
 .techStack li{
   background: #0A205A;
   color:white;
-  padding: 10px;
+  padding: 7px;
   border-radius: 5px;
   white-space: nowrap;
   overflow: hidden;
+  height: fit-content;
   text-overflow: ellipsis;
   margin: .25vw;
   font-weight: bold;
@@ -88,12 +90,37 @@ body {
   border-color:#294791;
 }
 
+.box-shadow{
+    box-shadow: 10px 10px 10px 0px #000000b0;
+}
+
 .dark-blue-color{
   color:#0A205A
 }
 
 .hoverAnchor:hover{
   color: white
+}
+
+.onHoverDiv:hover p{
+  color: #FBBF24;
+  border-bottom: 4px #0A205A;
+}
+
+.onHoverDiv:hover {
+  cursor: pointer;
+}
+
+.stickyBar{
+  transform: translateY(-150%);
+  opacity: 0;
+  z-index: 1;
+  transition: .25s;
+}
+
+.slideDown{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .techStack {
@@ -122,8 +149,8 @@ body {
 .techUsed li{
   background: white;
   color: black;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -146,8 +173,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0C1E4D;
-  clip-path: polygon(0 0, 100% 0, 100% 50%, -20% 0);
+  background: #040e2c;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, -20% 0);
 }
 
 .box {
@@ -164,8 +191,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0C1E4D;
-  clip-path: polygon(-20% 0, 100% 0, 100% 60%, 0 30%);
+  background: #0A205A;
+  clip-path: polygon(-20% 0, 100% 0, 100% 50%, 0 50%);
 }
 
 .contact-box {
@@ -182,8 +209,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0C1E4D;
-  clip-path: polygon(-20% 0, 100% 0, 100% 10%, 0 20%);
+  background: #0A205A;
+  clip-path: polygon(-20% 0, 100% 0, 100% 30%, 0 100%);
 }
 
 .top-left-box {
@@ -200,7 +227,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0C1E4D;
+  background: #040e2c;
   clip-path: polygon( -20% 0, 100% 0, 100% 20%, 0 10%);
 }
 
@@ -218,7 +245,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0C1E4D;
+  background: #040e2c;
   clip-path: polygon( -20% 0, 100% 0, 100% 10%, 0 10%);
 }
 
@@ -232,7 +259,7 @@ body {
 }
 
 .contact {
-  background-color: #0A205A;
+  background-color: #040e2c;
 }
 
 .yellow-color{
@@ -252,20 +279,20 @@ body {
 0px -1px 0px black,
 0px 1px 0px black; */
 }
-
-.main-container{
-  background-image: url("assets/portfolio-bg.gif");
-  height: 100vh;
-}
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .navItem{
   cursor: pointer;
+}
+
+.navHover::after{
+  transition: all ease-in-out .2s;
+  background: none repeat scroll 0 0 #FBBF24;
+  content: "";
+  display: block;
+  height: 6px;
+  width: 0; 
+}
+.navHover:hover::after{
+  width: 100%;
 }
 
 .navItem:hover{
@@ -307,3 +334,4 @@ body {
     transform: rotate(360deg);
   }
 }
+
