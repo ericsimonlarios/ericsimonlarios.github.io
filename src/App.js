@@ -151,11 +151,11 @@ useEffect(()=>{
   }
   return (
 
-    <div id="main-container" className="bg-cover w-full h-full">
+    <div id="main-container" className="bg-[#040e2c] w-full h-full">
       <div id="flashlight" className="shadow"></div>
-      <div id="home"  className="bg-gradient-1 flex h-screen items-center w-full flex-col pb-8">
+      <div id="home"  className=" bg-gradient-1 flex h-screen items-center w-full flex-col pb-8">
 
-        <div id="navBar" className='w-full flex justify-center p-8'>
+        <div id="navBar" className='w-full z-10 flex justify-center p-8'>
           <div id="navBar-container" className='w-full text-sm flex flex-row justify-around lg:w-3/4 lg:text-lg '>
             <div className='navItem  text-white font-bold p-2'><a href="#home">#home</a></div>
             <div className='navItem text-white font-bold  p-2'><a href="#about">#about</a></div>
@@ -164,7 +164,7 @@ useEffect(()=>{
           </div>
         </div>
 
-        <div id="home-container"  className='h-full w-5/6 items-center justify-center flex lg:h-full'>
+        <div id="home-container"  className='h-full z-10 w-5/6 items-center justify-center flex lg:h-full'>
           <div id="home-content" ref={ref} className='h-auto lg:w-full w-full flex flex-col items-center justify-center px-6'>
             
             <div className='flex justify-center items-center'>
@@ -199,18 +199,18 @@ useEffect(()=>{
 
       </div>
 
-      <div id="about" ref={expertiseRef} className="bg-[#040e2c]  lg:h-screen h-auto box w-full flex justify-start items-center flex-col py-8">
+      <div id="about" ref={expertiseRef} className=" z-10 lg:h-screen h-auto w-full flex justify-start items-center flex-col py-8">
 
-        <div id="about-container" className="h-5/6 w-5/6 flex items-center justify-center lg:flex-row flex-col-reverse">
-          <div id="about-content"  className='h-5/6 w-11/12 flex  flex-row lg:p-2 p-2'>
-            <div className=' w-full flex flex-col justify-around'>
+        <div id="about-container" className="h-5/6 w-5/6 z-10 flex items-center justify-center lg:flex-row flex-col-reverse">
+          <div id="about-content"  className='h-5/6 w-11/12 z-10 flex flex-row lg:p-2 p-2'>
+            <div className=' w-full flex flex-col z-10 justify-around'>
               <div id="expertiseTitle" className = "w-full withAnimDown lg:py-2 pt-2 flex justify-center">
                 <p className='yellow-color text-center drop-shadow-lg min-[1330px]:text-6xl text-4xl font-black navHover'><span className='text-white'>My</span> Expertise</p>
               </div>
 
-              <div className ="socMed-icons min-[1330px]:text-lg flex lg:flex-row flex-col justify-between items-center lg:p-0">
-                <div id="FE" className='withAnimLeft w-[350px] h-[350px] border-l-8 border-l-[#10D694] rounded-l-lg border-2 border-[#2eb2c163]/30 lg:m-0 m-4 shadow-inner shadow-lg shadow-[#2eb2c163]/50 '>
-                  <div className="flex h-2/6 items-center text-white border-b-2 border-[#10D694] p-2">
+              <div className ="socMed-icons min-[1330px]:text-lg z-10 flex lg:flex-row flex-col justify-between items-center lg:p-0">
+                <div id="FE" className='withAnimLeft w-[350px] z-10 h-[350px] border-l-8 border-l-[#10D694] rounded-l-lg border-2 border-[#2eb2c163]/30 lg:m-0 m-4 shadow-inner shadow-lg shadow-[#2eb2c163]/50 '>
+                  <div className="flex h-2/6 items-center z-10 text-white border-b-2 border-[#10D694] p-2">
                     <div>
                       <p className='flex items-center text-5xl text-[#10D694] p-2'><FaReact/></p> 
                     </div>
@@ -218,7 +218,7 @@ useEffect(()=>{
                       <p className='flex items-center text-2xl p-2 font-bold '>Front-end Development</p>
                     </div>
                   </div>
-                  <div className='h-4/6 flex justify-center items-center p-2'>
+                  <div className='h-4/6 flex justify-center z-10 items-center p-2'>
                     <div className="FEDivider flex flex-row text-white p-4">
                       <div className="FEDivider2 text-md flex">
                       Strives to deliver user-friendly designs with JavaScript, HTML, CSS, along with familiarity in ReactJS.
@@ -228,8 +228,8 @@ useEffect(()=>{
                  
                 </div>
 
-                <div id="BE" className='withAnim w-[350px] h-[350px] flex items-center  flex-col border-2 border-[#474A8A]/50 shadow-inner shadow-lg shadow-[#474A8A]/70 lg:m-0 m-4'>
-                  <div className="flex h-2/6 items-center text-white p-2 border-b-2 border-[#474A8A]">
+                <div id="BE" className='withAnim w-[350px] z-10 h-[350px] flex items-center  flex-col border-2 border-[#474A8A]/50 shadow-inner shadow-lg shadow-[#474A8A]/70 lg:m-0 m-4'>
+                  <div className="flex h-2/6 items-center z-10 text-white p-2 border-b-2 border-[#474A8A]">
                     <div>
                       <p className='flex items-center text-6xl text-[#474A8A] p-2 '><BiCodeAlt /></p> 
                     </div>
@@ -238,7 +238,7 @@ useEffect(()=>{
                     </div>
                   </div>
 
-                  <div className='h-4/6 flex justify-center items-center p-2'>
+                  <div className='h-4/6 flex justify-center z-10 items-center p-2'>
                     <div className="headerDivider flex flex-row text-white p-2">
                       <div className="headerDivider2 text-md flex">
                       Possesses a solid background in PHP and Node.js, with a track record of working with MySQL and Firebase.
@@ -248,8 +248,8 @@ useEffect(()=>{
                  
                 </div>
 
-                <div id="MD" className='withAnimRight w-[350px] h-[350px] border-r-8 border-r-[yellow] rounded-r-lg border-2 border-[yellow]/30 shadow-inner shadow-lg shadow-[yellow]/50 lg:m-0 m-4'>
-                  <div className="flex h-2/6 items-center text-white border-b-2 border-[yellow] p-2">
+                <div id="MD" className='withAnimRight w-[350px] z-10 h-[350px] border-r-8 border-r-[yellow] rounded-r-lg border-2 border-[yellow]/30 shadow-inner shadow-lg shadow-[yellow]/50 lg:m-0 m-4'>
+                  <div className="flex h-2/6 items-center z-10 text-white border-b-2 border-[yellow] p-2">
                     <div>
                       <p className='flex items-center text-6xl text-[yellow] p-2'><CiMobile4 /></p> 
                     </div>
@@ -258,7 +258,7 @@ useEffect(()=>{
                     </div>
                   </div>
 
-                <div className='h-4/6 flex justify-center items-center p-2'>
+                <div className='h-4/6 flex justify-center z-10 items-center p-2'>
                   <div className="MDivider flex flex-row text-white p-2">
                     <div className="MDivider2 text-md flex">
                       Proficient in NodeJS, Java, React Native, Android Studio, and Firebase, developing high-quality mobile applications.
@@ -286,7 +286,7 @@ useEffect(()=>{
           </Link>
       </div>
 
-      <div id="projects" className="bg-[#040e2c] flex flex-col h-auto w-full justify-center items-center py-8">
+      <div id="projects" className="bg-[#040e2c] z-10 flex flex-col h-auto w-full justify-center items-center py-8">
 
         <div id="projects-1" className='flex lg:h-screen h-auto w-5/6 flex-col justify-center items-center '>
           
@@ -294,8 +294,8 @@ useEffect(()=>{
         <div ref={FTProjRef}  className='w-11/12 flex lg:flex-row flex-col justify-between items-center py-8'>
           <div id="ft1-content-container"  className='lg:w-3/5 w-full flex lg:items-start items-center flex-col '>
 
-              <div id="FTProjTitle"  className='withAnim'>
-                <p className='yellow-color drop-shadow-lg min-[1330px]:text-6xl text-4xl font-black navHover'> <span className='text-white'>Featured</span> Project</p>
+              <div id="FTProjTitle" className='withAnim'>
+                <p className='yellow-color drop-shadow-lg min-[1330px]:text-6xl text-3xl font-black navHover'> <span className='text-white'>Featured</span> Project</p>
               </div>
 
               <div className='w-full flex lg:items-start items-center flex-col py-6'>
@@ -325,7 +325,7 @@ useEffect(()=>{
                </div>
 
               
-                <div id="FTProjDesc" className ="withAnim w-4/6 project-description lg:text-lg text-md text-white py-4">
+                <div id="FTProjDesc" className ="withAnim lg:w-4/6 w-full project-description lg:text-lg text-md text-white py-4">
                 A mobile app that offers a platform for tutors that desires to expand their tutoring services online
                 </div>
 
@@ -345,10 +345,10 @@ useEffect(()=>{
               </div>
             </div>
              
-            <div id="FTProjImage" className='withAnimRight ft1 rounded-lg flex flex-row justify-center items-center'>
+            <div id="FTProjImage" className='withAnimRight  ft1 rounded-lg flex flex-row justify-center items-center'>
 
-              <div id="ft1-img-banner " className='lg:ft1-img-banner min-[1330px]:h-[600px] h-[450px] min-[1330px]:w-[400px] w-[300px] lg:py-0 my-6 rounded-lg '>
-              <img className ="h-full w-full object-cover" src={require('./assets/taguro-gif.gif')}/>
+              <div id="ft1-img-banner " className='lg:ft1-img-banner min-[1330px]:h-[600px]  h-[450px] min-[1330px]:w-[400px] w-[300px] lg:py-0 my-6 rounded-lg '>
+              <img className ="h-full w-full object-cover z-10" src={require('./assets/taguro-gif.gif')}/>
               </div>
 
             </div>
@@ -356,7 +356,7 @@ useEffect(()=>{
 
         </div>
         
-        <div className='flex h-auto w-5/6 flex-col items-center py-8'>
+        <div className='flex z-10 h-auto w-5/6 flex-col items-center py-8'>
           <div ref={OTProjRef} className='w-11/12 h-auto flex justify-center flex-col'>
             <div id="OTProjTitle" className='withAnimDown py-8 flex max-[1400px]:justify-center'>
               <p className='yellow-color w-fit drop-shadow-lg min-[1330px]:text-6xl text-4xl min- font-black navHover'> <span className='text-white'>Other</span> Projects</p>
@@ -452,9 +452,12 @@ useEffect(()=>{
                   </div>
 
                   <div className='p-4 flex '>
+                  
+                    <Link to={'https://youtu.be/LBunZyqnnA4'} target='_blank'>
                     <div className=''>
                       <a className='navItem text-white font-bold text-lg'>#demo</a>
                     </div>
+                    </Link>
                     <Link to={'https://github.com/ericsimonlarios/prison_management'} target='_blank'>
                       <div className='px-4'>
                         <a className='navItem text-white font-bold text-lg'>#code</a>
@@ -543,10 +546,12 @@ useEffect(()=>{
                   </div>
 
                   <div className='p-4 flex '>
+                    <Link to={'https://youtu.be/8k0wENoUe_A'} target='_blank'>
                     <div className=''>
                       <a className='navItem text-white font-bold text-lg'>#demo</a>
                     </div>
-
+                    </Link>
+                    
                     <Link to={'https://github.com/ericsimonlarios/WSAPAndroidApp-Planner'} target='_blank'>
                       <div className='px-4'>
                         <a className='navItem text-white font-bold text-lg'>#code</a>
@@ -560,7 +565,7 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div id="contact" className=" bg-covers bg-gradient-2 h-screen w-full">
+      <div id="contact" className=" z-index-1 bg-covers bg-gradient-2 h-screen w-full">
 
         <div id="contact-container" className="h-full  w-full flex flex-col justify-center">
         <div id="contact-content" className='h-full  contact-box w-full flex flex-col justify-center items-center'>
@@ -606,7 +611,7 @@ useEffect(()=>{
           </div>
         </div>
 
-        <div className='w-full lg:h-1/6 bg-[black] h-auto flex lg:flex-row flex-col justify-center '>
+        <div className='w-full z-index-1 lg:h-1/6 bg-[black] h-auto flex lg:flex-row flex-col justify-center '>
             <div className="aboutMeTitle h-full lg:w-full justify-around lg:items-center lg:p-0 p-6 flex lg:flex-row flex-col">
               <div className = "flex flex-col justify-center text-md lg:p-0 py-4">
                 {/* <div>
