@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.25db3cdd.css",
+    "main.js": "/static/js/main.6fd7035e.js",
+    "static/js/787.449e9f16.chunk.js": "/static/js/787.449e9f16.chunk.js",
+    "static/media/profile-pic-4.JPG": "/static/media/profile-pic-4.b04d5765dd30ee522c70.JPG",
+    "static/media/gooby_keyboard_logo.gif": "/static/media/gooby_keyboard_logo.4048b6be4614512e60ee.gif",
+    "static/media/wsap-logo.png": "/static/media/wsap-logo.4d11ae8c859989b8c0bf.png",
+    "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.2c155811b35513d5beaa.ttf",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/taguro-gif.gif": "/static/media/taguro-gif.404f2785a86312a48aae.gif",
+    "static/media/OpenSans-Regular.ttf": "/static/media/OpenSans-Regular.9a6cfa5890d7f3eef585.ttf",
+    "static/media/HammersmithOne-Regular.ttf": "/static/media/HammersmithOne-Regular.d81de6e618c5a022ebcc.ttf",
+    "static/media/BricolageGrotesque-Regular.ttf": "/static/media/BricolageGrotesque-Regular.2fe9c71161c67e202b11.ttf",
+    "static/media/reform_logo.png": "/static/media/reform_logo.4f6e8cf79c29379dea5f.png",
+    "static/media/PatuaOne-Regular.ttf": "/static/media/PatuaOne-Regular.a9f01afefe6f58c9aeb2.ttf",
+    "static/media/portfolio-bg-2.png": "/static/media/portfolio-bg-2.8ef125df9c6c7842895c.png",
+    "static/media/projects-bg.png": "/static/media/projects-bg.0a44af3d1c029cbfebe0.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.25db3cdd.css.map": "/static/css/main.25db3cdd.css.map",
+    "main.6fd7035e.js.map": "/static/js/main.6fd7035e.js.map",
+    "787.449e9f16.chunk.js.map": "/static/js/787.449e9f16.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25db3cdd.css",
+    "static/js/main.6fd7035e.js"
+  ]
+}
