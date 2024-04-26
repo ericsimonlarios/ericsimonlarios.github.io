@@ -277,7 +277,7 @@ useEffect(()=>{
 
           </div>
 
-          <Link to={'https://drive.google.com/file/d/1cxS83JeRGW5KpNefKwxWnXtALe0h4BVL/view?usp=sharing'} target='_blank'>
+          <Link to={'https://drive.google.com/file/d/1Iy9pCYR7XO9mRYDsgojnkL3BOTCLp9UE/view?usp=sharing'} target='_blank'>
           <div id="ViewResume" className="withAnim ">
             <button class="view-proj-btn button-3 w-fit text-black lg:text-xl text-md font-bold p-4 border-b-4 darker-yellow rounded lg:m-0 m-4">
                View Resume
